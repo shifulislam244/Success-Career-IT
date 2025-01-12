@@ -18,17 +18,19 @@
         body {
             scroll-behavior: smooth;
             font-family: 'Arial', sans-serif;
+            padding-top: 6px; 
+            cursor: url('icons8-cursor-50.png'), auto;
         }
 
 
  
 
         .navbar .nav-link {
-            color: #fff !important;
+            color: #000000 !important;
         }
 
         .navbar {
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(147, 224, 246);
         }
 
         .fade-in {
@@ -126,10 +128,10 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg shadow fixed-top ">
         <div class="container">
             <a class="navbar-brand text-white" href="#">
-                <img src="web.jpeg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <img src="web.jpeg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2 rounded-circle img-fluid">
                 Success Career IT
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -159,7 +161,7 @@
             <div class="row g-4 align-items-center">
                 <!-- Text Column -->
                 <div class="col-md-6">
-                    <h1 class="display-4 fw-bold">Welcome to Success Career IT</h1>
+                    <h1 class="display-2 fw-bold">Welcome to Success Career IT</h1>
                     <p class="lead">
                         Discover professional courses tailored to build your career. 
                         Join thousands of students who have achieved their goals with us. 
@@ -170,20 +172,22 @@
                     </a>
                 </div>
     
-                <!-- Image Column -->
+                <!-- Spline 3D Project Column -->
                 <div class="col-md-6 text-center">
-                    <img src="web.jpeg" alt="Success Career IT Overview" class="img-fluid rounded shadow-sm">
+                    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
+                    <spline-viewer url="https://prod.spline.design/PBtqYtudRijMOdwF/scene.splinecode"></spline-viewer>
                 </div>
             </div>
         </div>
     </section>
     
+    
     <!-- Features Section -->
     <section id="features" class="fade-in">
         <div class="container">
-            <h2 class="text-center mb-4">Features</h2>
+          
              <div class="container py-5">
-        <h2 class="text-center mb-5 text-white">Our Courses</h2>
+        <h2 class="text-center mb-5 text-black">Our Courses</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             <!-- Card 1 -->
             <div class="col">
@@ -194,7 +198,14 @@
                         <p class="card-text">Learn to build responsive websites using HTML, CSS, JavaScript, and more.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="text-center mt-5">
+                            <button type="button" class="btn btn-primary position-relative">
+                                1999 Taka
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    50% Discounted
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,7 +218,14 @@
                         <p class="card-text">Master data analysis, visualization, and machine learning techniques.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="text-center mt-5">
+                            <button type="button" class="btn btn-primary position-relative">
+                                1999 Taka
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    50% Discounted
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,7 +238,14 @@
                         <p class="card-text">Become an expert in SEO, social media marketing, and online campaigns.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="text-center mt-5">
+                            <button type="button" class="btn btn-primary position-relative">
+                                1999 Taka
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    50% Discounted
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -233,7 +258,14 @@
                         <p class="card-text">Create stunning designs using tools like Photoshop, Illustrator, and Figma.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="text-center mt-5">
+                            <button type="button" class="btn btn-primary position-relative">
+                                1999 Taka
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    50% Discounted
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -285,6 +317,7 @@
                                     </div>
             
                                     <!-- Select Course -->
+                                    <!-- Select Course -->
                                     <div class="mb-3">
                                         <label for="course" class="form-label">Select Course</label>
                                         <select class="form-select" id="course" name="course" required>
@@ -295,31 +328,42 @@
                                             <option value="graphic-design">Graphic Design</option>
                                         </select>
                                     </div>
-            
+
+                                    <!-- Payment Details -->
+                                    <div class="mb-3 hidden" id="paymentDetails">
+                                        <p class="fw-bold">Amount: <span id="amount"></span></p>
+                                        <p class="fw-bold">Bkash Number: <span id="bkashNumber"></span></p>
+                                    </div>
+
                                     <!-- Bkash Transaction Number -->
-                                    <div class="mb-3">
-                                        <label for="bkashTransaction" class="form-label">Bkash Transaction Number</label>
-                                        <input type="text" class="form-control" id="bkashTransaction" name="bkashTransaction" placeholder="Enter your Bkash transaction number" required>
+                                    <div class="mb-3 hidden" id="transactionDiv">
+                                        <label for="transactionNumber" class="form-label">Bkash Transaction Number</label>
+                                        <input type="text" class="form-control" id="transactionNumber" name="transactionNumber" placeholder="Enter your Bkash Transaction Number">
                                     </div>
-            
-                                    <!-- Additional Notes -->
-                                    <div class="mb-3">
-                                        <label for="notes" class="form-label">Additional Notes</label>
-                                        <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Any additional information..."></textarea>
-                                    </div>
-            
+
                                     <!-- Submit Button -->
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
+                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                                     </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
+                                        
+                                    <!-- Additional Notes -->
+                                     <div class="mb-3">
+                                        <label for="notes" class="form-label">Additional Notes</label>
+                                         <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Any additional information..."></textarea>
+                                     </div>
+                                        
+                                      <!-- Submit Button -->
+                                     <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
+                                             </div>
+                                                </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </section>
 
     <!-- About Section -->
     <section id="about" class="fade-in">
@@ -348,6 +392,39 @@
             });
         });
         fadeElements.forEach(el => observer.observe(el));
+
+        const courseSelect = document.getElementById('course');
+    const paymentDetails = document.getElementById('paymentDetails');
+    const transactionDiv = document.getElementById('transactionDiv');
+    const amount = document.getElementById('amount');
+    const bkashNumber = document.getElementById('bkashNumber');
+
+    // Event Listener for Course Selection
+    courseSelect.addEventListener('change', function () {
+        const selectedCourse = this.value;
+
+        if (selectedCourse === "web-dev") {
+            amount.textContent = "2000 Taka";
+            bkashNumber.textContent = "01715075985 (Personal)";
+        } else if (selectedCourse === "data-science") {
+            amount.textContent = "2500 Taka";
+            bkashNumber.textContent = "01715075985 (Personal)";
+        } else if (selectedCourse === "digital-marketing") {
+            amount.textContent = "3000 Taka";
+            bkashNumber.textContent = "01715075985 (Personal)";
+        } else if (selectedCourse === "graphic-design") {
+            amount.textContent = "2200 Taka";
+            bkashNumber.textContent = "01715075985 (Personal)";
+        } else {
+            paymentDetails.classList.add('hidden');
+            transactionDiv.classList.add('hidden');
+            return;
+        }
+
+        // Show Payment Details and Transaction Number Input
+        paymentDetails.classList.remove('hidden');
+        transactionDiv.classList.remove('hidden');
+    });
     </script>
 </body>
 </html>
