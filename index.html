@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success Career IT</title>
-    <link rel="icon" href="web.jpeg" type="image/x-icon">
+    <link rel="icon" href="WhatsApp Image 2025-01-13 at 15.14.18_741042ea.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
@@ -18,7 +18,7 @@
         body {
             scroll-behavior: smooth;
             font-family: 'Arial', sans-serif;
-            padding-top: 6px; 
+           
             cursor: url('icons8-cursor-50.png'), auto;
         }
 
@@ -68,7 +68,7 @@
         footer {
             background-color: rgb(0, 0, 0);
             color: #ffffff;
-            padding: 20px 0;
+            
         }
 
 
@@ -117,7 +117,31 @@
 
 
 
+        #typing-animation {
+        display: inline-block;
+        color: #ff6f61;
+        font-weight: bold;
+        animation: color-change 3s infinite;
+    }
 
+    #typing-animation::after {
+        content: "|";
+        animation: blink 0.5s step-end infinite;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes color-change {
+        0% { color: #ff6f61; }
+        25% { color: #6fa8dc; }
+        50% { color: #93c47d; }
+        75% { color: #f9cb9c; }
+        100% { color: #ff6f61; }
+    }
 
 
 
@@ -131,7 +155,7 @@
     <nav class="navbar navbar-expand-lg shadow fixed-top ">
         <div class="container">
             <a class="navbar-brand text-white" href="#">
-                <img src="web.jpeg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2 rounded-circle img-fluid">
+                <img src="WhatsApp Image 2025-01-13 at 15.14.18_741042ea.jpg"   width="35" height="35" alt="Logo" class="d-inline-block align-text-top me-2 rounded-circle img-fluid">
                 Success Career IT
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,10 +167,10 @@
                         <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#features">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
+                        <a class="nav-link" href="#pricing">addmission</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -160,26 +184,28 @@
         <div class="container py-5">
             <div class="row g-4 align-items-center">
                 <!-- Text Column -->
-                <div class="col-md-6">
-                    <h1 class="display-2 fw-bold">Welcome to Success Career IT</h1>
+                <div class="col-md-5">
+                    <h4 class="display-1 ">
+                        <span id="typing-animation"></span>
+                    </h4>
                     <p class="lead">
                         Discover professional courses tailored to build your career. 
                         Join thousands of students who have achieved their goals with us. 
                         Take the first step on your journey today!
                     </p>
-                    <a href="#courses" class="btn btn-primary btn-lg">
+                    <a href="#features" class="btn btn-primary btn-lg">
                         Explore Courses
                     </a>
                 </div>
     
                 <!-- Spline 3D Project Column -->
-                <div class="col-md-6 text-center">
-                    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
-                    <spline-viewer url="https://prod.spline.design/PBtqYtudRijMOdwF/scene.splinecode"></spline-viewer>
+                <div class="col-md-7 text-center">
+                    <img src="work-with-the-best.png" style="height: 400px; width: 400px; object-fit: cover;" alt="Work with the Best">
                 </div>
             </div>
         </div>
     </section>
+    
     
     
     <!-- Features Section -->
@@ -192,10 +218,10 @@
             <!-- Card 1 -->
             <div class="col">
                 <div class="card h-100 text-center shadow">
-                    <img src="pexels-photo-1043474.png" class="card-img-top" alt="Web Development">
+                    <img src="web.jpg" class="card-img-top" alt="Web Development">
                     <div class="card-body">
                         <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Learn to build responsive websites using HTML, CSS, JavaScript, and more.</p>
+                        <p class="card-text">ওয়েবসাইট তৈরি করার প্রক্রিয়াই হলো ওয়েব ডেভেলপমেন্ট। এটি HTML, CSS, এবং JavaScript দিয়ে শুরু হয়। আপনি শিখবেন কীভাবে একটি ওয়েবপেজ ডিজাইন করবেন, ফর্ম তৈরি করবেন, এবং ইন্টারেক্টিভ ফিচার যোগ করবেন। এটি শেখার জন্য ধৈর্য এবং অনুশীলনই মূল।"শুরু করুন আজই, ভবিষ্যত গড়ুন নিজ হাতে!</p>
                     </div>
                     <div class="card-footer">
                         <div class="text-center mt-5">
@@ -212,10 +238,12 @@
             <!-- Card 2 -->
             <div class="col">
                 <div class="card h-100 text-center shadow">
-                    <img src="pexels-photo-1043474.png" class="card-img-top" alt="Data Science">
+                    <img src="video.jpg" class="card-img-top" alt="Data Science">
                     <div class="card-body">
-                        <h5 class="card-title">Data Science</h5>
-                        <p class="card-text">Master data analysis, visualization, and machine learning techniques.</p>
+                        <h5 class="card-title">video editing</h5>
+                        <p class="card-text">CapCut হলো একটি সহজ ভিডিও এডিটিং অ্যাপ। এখানে ভিডিও কাটুন, ব্যাকগ্রাউন্ড মিউজিক যোগ করুন, এবং টেক্সট বা ইফেক্ট লাগান। এটি ব্যবহার করা সহজ এবং মোবাইলেই কাজ করা যায়।
+
+                            "মজা করে এডিটিং শিখুন, ক্রিয়েটিভ হন!</p>
                     </div>
                     <div class="card-footer">
                         <div class="text-center mt-5">
@@ -232,10 +260,13 @@
             <!-- Card 3 -->
             <div class="col">
                 <div class="card h-100 text-center shadow">
-                    <img src="pexels-photo-1043474.png" class="card-img-top" alt="Digital Marketing">
+                    <img src="noman.jpg" class="card-img-top" alt="Digital Marketing">
                     <div class="card-body">
-                        <h5 class="card-title">Digital Marketing</h5>
-                        <p class="card-text">Become an expert in SEO, social media marketing, and online campaigns.</p>
+                        <h5 class="card-title">Master Graphic Design</h5>
+                        <p class="card-text">নতুনদের জন্য Canva মাস্টার ক্লাস:
+                            Canva হলো সহজ গ্রাফিক্স ডিজাইন টুল। এখানে টেমপ্লেট ব্যবহার করে পোস্টার, লোগো, বা সোশ্যাল মিডিয়া ডিজাইন তৈরি করুন। কোডিং লাগবে না, শুধু ক্রিয়েটিভিটি!
+                            
+                            "Canva দিয়ে শুরু করুন, ডিজাইনে দক্ষ হন!</p>
                     </div>
                     <div class="card-footer">
                         <div class="text-center mt-5">
@@ -252,10 +283,12 @@
             <!-- Card 4 -->
             <div class="col">
                 <div class="card h-100 text-center shadow">
-                    <img src="pexels-photo-1043474.png" class="card-img-top" alt="Graphic Design">
+                    <img src="8666222.jpg" class="card-img-top" alt="Graphic Design">
                     <div class="card-body">
-                        <h5 class="card-title">Graphic Design</h5>
-                        <p class="card-text">Create stunning designs using tools like Photoshop, Illustrator, and Figma.</p>
+                        <h5 class="card-title">Sohokari Graphic Design</h5>
+                        <p class="card-text">Canva সহজেই ব্যানার, স্লাইড, সার্টিফিকেট এবং পোস্টার তৈরি করতে সাহায্য করে। কোনো অভিজ্ঞতা ছাড়াই সুন্দর ডিজাইন করুন। শেখা সহজ, কাজ দ্রুত!
+
+                            "Canva দিয়ে ক্লাস এবং কাজকে সুন্দর করুন!</p>
                     </div>
                     <div class="card-footer">
                         <div class="text-center mt-5">
@@ -340,6 +373,11 @@
                                         <label for="transactionNumber" class="form-label">Bkash Transaction Number</label>
                                         <input type="text" class="form-control" id="transactionNumber" name="transactionNumber" placeholder="Enter your Bkash Transaction Number">
                                     </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                    </div>
                                         
                                     <!-- Additional Notes -->
                                      <div class="mb-3">
@@ -363,8 +401,28 @@
     <!-- About Section -->
     <section id="about" class="fade-in">
         <div class="container">
-            <h2>About</h2>
-            <p>Our mission is to empower learners to achieve their career goals through accessible, high-quality education.</p>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h1 class="fw-bold mb-4">স্বাগতম!</h1>
+                    <p class="lead">
+                        আপনাকে স্বাগত জানাই <strong>সাকসেস ক্যারিয়ার আইটি</strong>-তে!<br>
+                        আমরা পেশাদার কোর্স এবং প্রশিক্ষণের মাধ্যমে আপনাকে আপনার ক্যারিয়ার গড়ার সেরা সুযোগ প্রদান করছি।<br>
+                        আমাদের লক্ষ্য হল আপনাকে দক্ষতা অর্জনের মাধ্যমে আপনার স্বপ্ন পূরণে সহায়তা করা।
+                    </p>
+                    <h3 class="mt-4">আমাদের বিশেষ বৈশিষ্ট্যগুলি:</h3>
+                    <ul class="list-unstyled my-3">
+                        <li>✅ জব মার্কেট উপযোগী কোর্স।</li>
+                        <li>✅ অভিজ্ঞ প্রশিক্ষকদের সরাসরি গাইডলাইন।</li>
+                        <li>✅ বাস্তব কাজের অভিজ্ঞতা।</li>
+                        <li>✅ ২৪/৭ সাপোর্ট এবং কনসালটেশন।</li>
+                    </ul>
+                    <p class="lead">
+                        আজই আমাদের সাথে যোগ দিন এবং আপনার সাফল্যের যাত্রা শুরু করুন!<br>
+                        <strong>শিখুন, গড়ে তুলুন, সফল হন।</strong>
+                    </p>
+                    <p class="fw-bold fst-italic mt-4">"আপনার স্বপ্ন, আমাদের মিশন।"</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -420,6 +478,49 @@
         paymentDetails.classList.remove('hidden');
         transactionDiv.classList.remove('hidden');
     });
+
+
+
+
+    const texts = [
+        "Welcome to Success Career IT",
+        "Discover Professional Courses",
+        "Achieve Your Career Goals",
+        "Learn, Grow, Succeed"
+    ];
+    const typingElement = document.getElementById("typing-animation");
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentText = texts[textIndex];
+        const delay = isDeleting ? 50 : 100; // Typing speed (faster when deleting)
+
+        // Add or remove characters based on the mode
+        if (isDeleting) {
+            typingElement.textContent = currentText.substring(0, charIndex--);
+        } else {
+            typingElement.textContent = currentText.substring(0, charIndex++);
+        }
+
+        // If the text is fully displayed or erased, switch mode
+        if (!isDeleting && charIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(type, 1000); // Pause before deleting
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length; // Loop through texts
+            setTimeout(type, 500); // Pause before typing the next text
+        } else {
+            setTimeout(type, delay);
+        }
+    }
+
+    // Start the typing animation when the page loads
+    window.onload = type;
+
+
     </script>
 </body>
 </html>
