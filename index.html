@@ -271,7 +271,7 @@
                     <div class="card-footer">
                         <div class="text-center mt-5">
                             <button type="button" class="btn btn-primary position-relative">
-                                1999 Taka
+                                2999 Taka
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     50% Discounted
                                 </span>
@@ -293,7 +293,7 @@
                     <div class="card-footer">
                         <div class="text-center mt-5">
                             <button type="button" class="btn btn-primary position-relative">
-                                1999 Taka
+                                2999 Taka
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     50% Discounted
                                 </span>
@@ -316,7 +316,7 @@
                         <div class="col-lg-6 col-md-8">
                             <div class="form-container">
                                 <h2 class="form-title">E-Learning Registration Form</h2>
-                                <form action="https://api.web3forms.com/submit" method="POST">
+                                <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
                                     <input type="hidden" name="access_key" value="7e3ee00c-7e69-4ace-99a4-85ff0cae167f">
             
                                     <!-- Full Name -->
@@ -350,18 +350,17 @@
                                     </div>
             
                                     <!-- Select Course -->
-                                    <!-- Select Course -->
                                     <div class="mb-3">
                                         <label for="course" class="form-label">Select Course</label>
                                         <select class="form-select" id="course" name="course" required>
                                             <option value="" disabled selected>Choose a course</option>
                                             <option value="web-dev">Web Development</option>
-                                            <option value="data-science">video Editing </option>
+                                            <option value="video editing">Video Editing</option>
                                             <option value="digital-marketing">Digital Marketing</option>
                                             <option value="graphic-design">Graphic Design</option>
                                         </select>
                                     </div>
-
+                                    
                                     <!-- Payment Details -->
                                     <div class="mb-3 hidden" id="paymentDetails">
                                         <p class="fw-bold">Amount: <span id="amount"></span></p>
@@ -373,30 +372,26 @@
                                         <label for="transactionNumber" class="form-label">Bkash Transaction Number</label>
                                         <input type="text" class="form-control" id="transactionNumber" name="transactionNumber" placeholder="Enter your Bkash Transaction Number">
                                     </div>
-
+            
+                                    <!-- Additional Notes -->
+                                    <div class="mb-3">
+                                        <label for="notes" class="form-label">Additional Notes</label>
+                                        <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Any additional information..."></textarea>
+                                    </div>
+            
                                     <!-- Submit Button -->
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                    </div>
-                                        
-                                    <!-- Additional Notes -->
-                                     <div class="mb-3">
-                                        <label for="notes" class="form-label">Additional Notes</label>
-                                         <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Any additional information..."></textarea>
-                                     </div>
-                                        
-                                      <!-- Submit Button -->
-                                     <div class="text-center">
                                         <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
-                                             </div>
-                                                </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
                                     </div>
-                                </section>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
 
     <!-- About Section -->
     <section id="about" class="fade-in">
@@ -457,17 +452,17 @@
         const selectedCourse = this.value;
 
         if (selectedCourse === "web-dev") {
-            amount.textContent = "2000 Taka";
-            bkashNumber.textContent = "01715075985 (Personal)";
-        } else if (selectedCourse === "data-science") {
-            amount.textContent = "2500 Taka";
-            bkashNumber.textContent = "01715075985 (Personal)";
+            amount.textContent = "999 Taka only";
+            bkashNumber.textContent = "01816729091 (Personal)";
+        } else if (selectedCourse === "video editing") {
+            amount.textContent = "999 Taka only";
+            bkashNumber.textContent = "01816729091 (Personal)";
         } else if (selectedCourse === "digital-marketing") {
-            amount.textContent = "3000 Taka";
-            bkashNumber.textContent = "01715075985 (Personal)";
+            amount.textContent = "akhon ai sebha ney";
+            bkashNumber.textContent = "01816729091 (Personal)";
         } else if (selectedCourse === "graphic-design") {
-            amount.textContent = "2200 Taka";
-            bkashNumber.textContent = "01715075985 (Personal)";
+            amount.textContent = "1500 Taka";
+            bkashNumber.textContent = "01816729091 (Personal)";
         } else {
             paymentDetails.classList.add('hidden');
             transactionDiv.classList.add('hidden');
